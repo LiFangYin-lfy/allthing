@@ -1,0 +1,37 @@
+<view class="container">
+  <view class="change_a">
+    <view class="list_empty">
+      <view class="chan_list" wx:if="{{storeList.length != 0}}">
+        <block wx:for="{{storeList}}" wx:for-index="index" wx:for-item="item" wx:key="index">
+          <view class="list_item" bindtap="gonewOut" data-it="{{item.QRID}}">
+            <view class="top">
+              <view class="log_img">
+                <image src="{{itemImg+item.SKUImg}}" mode="widthFix" />
+              </view>
+              <view class="top_right">
+                <view class="titles title_content2">{{item.shopName}}</view>
+                <view class="small_title">【{{item.SKUspecs}}】</view>
+              </view>
+            </view>
+            <view class="bottoms">
+              <view class="left_tops">
+                <image src="{{itemImg + item.shopHeadImg}}" />
+                <view class="bot_test">{{item.EETime}}查验了该商品</view>
+              </view>
+              <view class="lookmores">
+                <view class="lood">查看更多</view>
+                <image src="{{imagesUrl}}/huiright.png" />
+              </view>
+            </view>
+          </view>
+        </block>
+      </view>
+      <view class="cno" wx:else>
+        <view class="kongbox" wx:if="{{it_cloose}}">
+          <image src="{{imagesUrl}}/image10.png" mode="widthFix" />
+          <view class="c_name">暂无内容，尽情期待</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="imgs" wx:if="{{four ==0}}">
+    <image src="{{imagesUrl}}/image10.png" mode="aspectFill" />
+  </view>
+  <view class="cno" wx:else>
+    <view class="kongbox" wx:if="{{it_cloose}}" bindtap="gowaibu">
+      <image src="{{imagesUrl}}/image10.png" mode="widthFix" />
+      <view class="c_name">暂无内容，尽情期待</view>
+    </view>
+  </view>
+</view>

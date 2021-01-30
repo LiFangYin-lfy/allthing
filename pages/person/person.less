@@ -1,0 +1,218 @@
+page {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+.container {
+  width: 100%;
+
+  .lif {
+    width: 100%;
+
+    .top_nav {
+      width: 100%;
+      background: url('http://qimg.newxnf.com/Images/APPletImg/bgc.png') no-repeat;
+      background-size: 100% 100%;
+      box-sizing: border-box;
+      height: 380rpx;
+      position: relative;
+
+      .pers_on {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 100rpx;
+        box-sizing: border-box;
+
+
+        image {
+          width: 132rpx;
+          height: 132rpx;
+          border-radius: 50%;
+
+        }
+
+        .per_names {
+          width: 100%;
+          text-align: center;
+          // padding: 28rpx 0;
+          box-sizing: border-box;
+          font-size: 32rpx;
+          font-family: PingFang SC,
+            PingFang SC-Regular;
+          font-weight: 400;
+          color: #ffffff;
+          line-height: 70rpx;
+          letter-spacing: -1rpx;
+
+        }
+      }
+
+      .edtor_img {
+        width: 72rpx;
+        height: 72rpx;
+        position: absolute;
+        top: 30%;
+        right: 32rpx;
+        z-index: 10;
+      }
+    }
+
+    .list {
+      width: 100%;
+      padding: 0 32rpx;
+      box-sizing: border-box;
+      margin-top: 28rpx;
+      background-color: #fff;
+
+      .item_it {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40rpx 0;
+        box-sizing: border-box;
+        border-bottom: 1rpx solid #EAECEE;
+
+        .left_its {
+          display: flex;
+          align-items: center;
+
+          image {
+            width: 30rpx;
+            height: 26rpx;
+            margin-right: 16rpx;
+
+          }
+
+          .it_name {
+            font-size: 28rpx;
+            font-family: SourceHanSansCN-Regular;
+            color: #333333;
+          }
+        }
+
+        .images {
+          width: 20rpx;
+          height: 28rpx;
+        }
+      }
+    }
+
+    .login {
+
+      // 弹窗
+      /*使屏幕变暗  */
+      .commodity_screen {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: #000;
+        opacity: 0.2;
+        overflow: hidden;
+        z-index: 1000;
+        color: #fff;
+      }
+
+      /*对话框 */
+      .commodity_attr_box {
+        height: 400rpx;
+        width: 100%;
+        overflow: hidden;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 2000;
+        background: #fff;
+        padding: 20rpx;
+        box-sizing: border-box;
+        border-radius: 24rpx 24rpx 0 0;
+
+        .phoneshou {
+          width: 100%;
+          padding: 0 32rpx;
+          box-sizing: border-box;
+
+          .padlock {
+            width: 100%;
+            height: 48rpx;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            image {
+              width: 48rpx;
+              height: 48rpx;
+            }
+          }
+
+          .phone_title {
+            width: 100%;
+            height: 70rpx;
+            font-size: 44rpx;
+            line-height: 70rpx;
+            color: #06121F;
+            font-family: PingFangSC, PingFangSC-Regular;
+
+
+          }
+
+          .tips_content {
+            width: 100%;
+            height: 40rpx;
+            font-size: 32rpx;
+            color: #8C9198;
+            margin: 30rpx 0;
+          }
+
+
+          .downbtn {
+            width: 750rpx;
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            padding: 20rpx 0;
+            background-color: #fff;
+
+            .btn {
+              height: 100rpx;
+              width: 90%;
+              color: #fff;
+              padding: 0;
+              box-sizing: border-box;
+              font-size: 32rpx;
+              background: #FF961C;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              border-radius: 50rpx;
+
+              image {
+                width: 60rpx;
+                height: 48rpx;
+                margin-right: 20rpx;
+              }
+
+            }
+
+            .btn1 {
+              margin-bottom: 20rpx;
+              background-color: #ccc;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .emp {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+  }
+}

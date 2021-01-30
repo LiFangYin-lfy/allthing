@@ -1,0 +1,231 @@
+page {
+  background: #f9f9f9;
+}
+.container .change_a {
+  width: 100%;
+}
+.container .change_a .list_empty {
+  width: 100%;
+}
+.container .change_a .list_empty .chan_list {
+  width: 100%;
+  margin-top: 28rpx;
+}
+.container .change_a .list_empty .chan_list .list_item {
+  width: 100%;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+  padding: 28rpx 32rpx 28rpx 46rpx;
+  box-sizing: border-box;
+}
+.container .change_a .list_empty .chan_list .list_item .top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.container .change_a .list_empty .chan_list .list_item .top .toop_img {
+  width: 209rpx;
+  height: 142rpx;
+  border-radius: 8rpx;
+}
+.container .change_a .list_empty .chan_list .list_item .top .top_right {
+  flex: 1;
+  height: 142rpx;
+  padding-left: 20rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.container .change_a .list_empty .chan_list .list_item .top .top_right .titles {
+  width: 100%;
+  font-size: 28rpx;
+  font-family: PingFang SC, PingFang SC-Medium;
+  font-weight: 500;
+  text-align: left;
+  color: #333333;
+  line-height: 34rpx;
+}
+.container .change_a .list_empty .chan_list .list_item .top .top_right .small_title {
+  width: 100%;
+  font-size: 22rpx;
+  font-family: PingFang SC, PingFang SC-Regular;
+  font-weight: 400;
+  text-align: left;
+  color: #999999;
+  line-height: 26rpx;
+}
+.container .change_a .list_empty .chan_list .list_item .top .top_right .star {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.container .change_a .list_empty .chan_list .list_item .top .top_right .star .iims {
+  display: flex;
+  align-items: center;
+}
+.container .change_a .list_empty .chan_list .list_item .top .top_right .star .iims .lims {
+  margin: 0 5rpx;
+  width: 26rpx;
+  height: 26rpx;
+}
+.container .change_a .list_empty .chan_list .list_item .top .top_right .star .tes_star {
+  font-size: 18rpx;
+  font-family: AlibabaPuHuiTi-Regular;
+  color: #fd9400;
+  line-height: 22rpx;
+  margin-left: 20rpx;
+}
+.container .change_a .list_empty .chan_list .list_item .bottoms {
+  width: 100%;
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .change_a .list_empty .chan_list .list_item .bottoms .left_tops {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.container .change_a .list_empty .chan_list .list_item .bottoms .left_tops image {
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 50%;
+}
+.container .change_a .list_empty .chan_list .list_item .bottoms .left_tops .bot_test {
+  font-size: 24rpx;
+  font-family: PingFang SC, PingFang SC-Regular;
+  font-weight: 400;
+  color: #666666;
+  line-height: 29rpx;
+  margin-left: 10rpx;
+}
+.container .change_a .list_empty .chan_list .list_item .bottoms .lookmores {
+  width: 140rpx;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.container .change_a .list_empty .chan_list .list_item .bottoms .lookmores .lood {
+  font-size: 24rpx;
+  font-family: PingFang SC, PingFang SC-Regular;
+  font-weight: 400;
+  color: #a5a5a5;
+  line-height: 29rpx;
+  margin-right: 10rpx;
+}
+.container .change_a .list_empty .chan_list .list_item .bottoms .lookmores image {
+  width: 14rpx;
+  height: 20rpx;
+}
+.container .change_a .list_empty .cno {
+  width: 100%;
+}
+.container .change_a .list_empty .cno .kongbox {
+  width: 460rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 160rpx auto;
+}
+.container .change_a .list_empty .cno .kongbox image {
+  width: 100%;
+  height: 324rpx;
+}
+.container .change_a .list_empty .cno .kongbox .c_name {
+  margin-top: 30rpx;
+  font-size: 32rpx;
+  color: #ccc;
+}
+.container .login {
+  /*使屏幕变暗  */
+  /*对话框 */
+}
+.container .login .commodity_screen {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.2;
+  overflow: hidden;
+  z-index: 1000;
+  color: #fff;
+}
+.container .login .commodity_attr_box {
+  height: 400rpx;
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2000;
+  background: #fff;
+  padding: 20rpx;
+  box-sizing: border-box;
+  border-radius: 24rpx 24rpx 0 0;
+}
+.container .login .commodity_attr_box .phoneshou {
+  width: 100%;
+  padding: 0 32rpx;
+  box-sizing: border-box;
+}
+.container .login .commodity_attr_box .phoneshou .padlock {
+  width: 100%;
+  height: 48rpx;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.container .login .commodity_attr_box .phoneshou .padlock image {
+  width: 60rpx;
+  height: 48rpx;
+}
+.container .login .commodity_attr_box .phoneshou .phone_title {
+  width: 100%;
+  height: 70rpx;
+  font-size: 44rpx;
+  line-height: 70rpx;
+  color: #06121F;
+  font-family: PingFangSC, PingFangSC-Regular;
+}
+.container .login .commodity_attr_box .phoneshou .tips_content {
+  width: 100%;
+  height: 40rpx;
+  font-size: 32rpx;
+  color: #8C9198;
+  margin: 30rpx 0;
+}
+.container .login .commodity_attr_box .phoneshou .downbtn {
+  width: 750rpx;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 20rpx 0;
+  background-color: #fff;
+}
+.container .login .commodity_attr_box .phoneshou .downbtn .btn {
+  height: 100rpx;
+  width: 90%;
+  color: #fff;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 32rpx;
+  background: #FF961C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50rpx;
+}
+.container .login .commodity_attr_box .phoneshou .downbtn .btn image {
+  width: 48rpx;
+  height: 48rpx;
+  margin-right: 20rpx;
+}
+.container .login .commodity_attr_box .phoneshou .downbtn .btn1 {
+  margin-bottom: 20rpx;
+  background-color: #ccc;
+}

@@ -1,0 +1,43 @@
+page {
+  width: 100%;
+  height: 100%;
+  background-color: #f9f9f9;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.container .imgs {
+  width: 100%;
+  padding: 32rpx 32rpx;
+  box-sizing: border-box;
+  height: 750rpx;
+}
+.container .imgs image {
+  height: 100%;
+  width: 100%;
+}
+.container .cno {
+  width: 100%;
+  position: absolute;
+  top: 20%;
+  left: 0;
+}
+.container .cno .kongbox {
+  width: 460rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0rpx auto;
+}
+.container .cno .kongbox image {
+  width: 100%;
+  height: 100%;
+}
+.container .cno .kongbox .c_name {
+  margin-top: 30rpx;
+  font-size: 32rpx;
+  color: #ccc;
+}

@@ -1,0 +1,63 @@
+<view class="container">
+  <view class="lif" wx:if="{{is_items ==true}}">
+    <view class="top_nav">
+      <view class="pers_on" bindtap="getToken">
+        <image src="{{imagesUrl}}/img_y.png" wx:if="{{HeadImg == ''}}" />
+        <image src="{{HeadImg}}" wx:else />
+        <view class="per_names">{{Headname==''? '登录或注册':Headname}}</view>
+      </view>
+    </view>
+    <view class="list">
+      <view class="item_it" bindtap="goMyBuy">
+        <view class="left_its">
+          <image src="{{imagesUrl}}/image05.png" />
+          <view class="it_name">我买到的</view>
+        </view>
+        <image class="images" src="{{imagesUrl}}/huiright.png" />
+      </view>
+      <view class="item_it" bindtap="goMyLooked">
+        <view class="left_its">
+          <image src="{{imagesUrl}}/image03.png" />
+          <view class="it_name">我看过的</view>
+        </view>
+        <image class="images" src="{{imagesUrl}}/huiright.png" />
+      </view>
+      <view class="item_it" bindtap="goMyCollected">
+        <view class="left_its">
+          <image src="{{imagesUrl}}/image01.png" />
+          <view class="it_name">我的收藏</view>
+        </view>
+        <image class="images" src="{{imagesUrl}}/huiright.png" />
+      </view>
+      <view class="item_it" bindtap="goMyCoupon">
+        <view class="left_its">
+          <image src="{{imagesUrl}}/image06.png" />
+          <view class="it_name">我的优惠券</view>
+        </view>
+        <image class="images" src="{{imagesUrl}}/huiright.png" />
+      </view>
+    </view>
+    <!-- 授权登录 -->
+    <view class="login">
+      <!-- 屏幕背景变暗的背景 -->
+      <view class="commodity_screen" bindtap="hideModal" wx:if="{{showModalStatus}}"></view>
+      <!-- 弹出框 -->
+      <view animation="{{animationData}}" class="commodity_attr_box" wx:if="{{showModalStatus}}">
+        <view class="phoneshou">
+          <view class="padlock" catchtap="hideModal">
+            <image src="{{imagesUrl}}/icon_a.png" />
+          </view>
+          <view class="phone_title">请先授权登录</view>
+          <view class="tips_content">为了更好的为你提供服务，请允许微信授权后再使用功能</view>
+          <view class="downbtn">
+            <button class="btn" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="wechatWarranty">
+              <image src="{{imagesUrl}}/icon_c.png" />
+              授权登录
+            </button>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="emp" wx:if="{{is_items ==false}}"></view>
+</view>

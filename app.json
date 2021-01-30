@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/Apublic/Apublic",
+    "pages/person/person",
+    "pages/myBuy/myBuy",
+    "pages/myLooked/myLooked",
+    "pages/myCollected/myCollected",
+    "pages/myCoupon/myCoupon",
+    "pages/out/out",
+    "pages/searchResult/searchResult",
+    "pages/newout/newout"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "慧眼万物",
+    "navigationBarTextStyle": "black"
+
+  },
+  "tabBar": {
+    "color": "#808080",
+    "backgroundColor": "#fff",
+    "selectedColor": "#FD8800",
+    "list": [
+      {
+        "text": "靓点发现",
+        "pagePath": "pages/home/home",
+        "iconPath": "/static/icon/3_icon.png",
+        "selectedIconPath": "/static/icon/1_icon.png"
+      },
+      {
+        "text": "个人中心",
+        "pagePath": "pages/person/person",
+        "iconPath": "/static/icon/2_icon.png",
+        "selectedIconPath": "/static/icon/4_icon.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

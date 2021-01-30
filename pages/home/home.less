@@ -1,0 +1,502 @@
+page {
+  background: #f9f9f9;
+}
+
+.container {
+  width: 100%;
+
+  .searchbox {
+    height: 108rpx;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 32rpx;
+    box-sizing: border-box;
+
+    .pic {
+      width: 68rpx;
+      height: 68rpx;
+      margin-left: 32rpx;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      image {
+        width: 48rpx;
+        height: 48rpx;
+        margin: 0 auto;
+      }
+    }
+
+    .searchinput {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      height: 68rpx;
+      background: #f2f2f2;
+      border-radius: 32px;
+      padding-left: 32rpx;
+      box-sizing: border-box;
+
+      .searchicon {
+        width: 28rpx;
+        height: 28rpx;
+        margin-right: 12rpx;
+      }
+
+      input {
+        font-size: 28rpx;
+      }
+
+    }
+
+  }
+
+  // 轮播
+  .banner_image {
+    width: 100%;
+    margin-top: 10rpx;
+    height: 350rpx;
+
+    swiper {
+      display: block;
+      height: 100%;
+    }
+
+    .banner {
+      width: 100%;
+      height: 100%;
+
+      image {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+  }
+
+  .change_a {
+    width: 100%;
+    margin-top: 20rpx;
+
+
+    .chan_at {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 28rpx 32rpx;
+      box-sizing: border-box;
+      border-bottom: 1rpx solid #e6e6e6;
+      background-color: #fff;
+
+
+      .at_title {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 28rpx;
+        font-family: PingFang SC,
+          PingFang SC-Bold;
+        font-weight: 700;
+        text-align: left;
+        color: #333333;
+
+
+      }
+
+      .active {
+        position: relative;
+
+        &::after {
+          content: '';
+          position: absolute;
+          width: 68rpx;
+          height: 4rpx;
+          background: #ffb844;
+          left: 50%;
+          transform: translate(-50%);
+          bottom: -28rpx;
+        }
+      }
+    }
+
+    .list_empty {
+      width: 100%;
+
+      .chan_list {
+        width: 100%;
+
+        .list_item {
+          width: 100%;
+          padding: 28rpx 32rpx 28rpx 46rpx;
+          box-sizing: border-box;
+          background-color: #fff;
+          margin-bottom: 20rpx;
+
+          .top {
+            width: 100%;
+            display: flex;
+            align-items: center;
+
+            .log_img {
+              width: 209rpx;
+              min-height: 142rpx;
+
+              image {
+                width: 100%;
+                height: 100%;
+                border-radius: 8rpx;
+              }
+            }
+
+
+            .top_right {
+              flex: 1;
+              height: 142rpx;
+              padding-left: 20rpx;
+              box-sizing: border-box;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-around;
+
+              .titles {
+                width: 100%;
+                font-size: 28rpx;
+                font-family: PingFang SC,
+                  PingFang SC-Medium;
+                font-weight: 500;
+                text-align: left;
+                color: #333333;
+                line-height: 34rpx;
+              }
+
+              .small_title {
+                width: 100%;
+                font-size: 22rpx;
+                font-family: PingFang SC,
+                  PingFang SC-Regular;
+                font-weight: 400;
+                text-align: left;
+                color: #999999;
+                line-height: 26rpx;
+                margin-bottom: 10rpx;
+              }
+
+              .star {
+                width: 100%;
+                display: flex;
+                align-items: center;
+
+
+                .iims {
+                  display: flex;
+                  align-items: center;
+
+                  .lims {
+                    margin: 0 5rpx;
+                    width: 26rpx;
+                    height: 26rpx;
+                  }
+                }
+
+                .tes_star {
+                  font-size: 18rpx;
+                  font-family: AlibabaPuHuiTi-Regular;
+                  color: #fd9400;
+                  line-height: 22rpx;
+                  margin-left: 20rpx;
+                }
+
+              }
+
+              .store_names {
+                font-size: 24rpx;
+                font-family: PingFang SC,
+                  PingFang SC-Regular;
+                font-weight: 400;
+                color: #666666;
+                line-height: 29rpx;
+                // margin-left: 10rpx;
+              }
+            }
+
+
+
+          }
+
+          .bottoms {
+            width: 100%;
+            margin-top: 20rpx;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .left_tops {
+              flex: 1;
+              display: flex;
+              align-items: center;
+
+              image {
+                width: 48rpx;
+                height: 48rpx;
+                border-radius: 50%;
+                flex-shrink: 0;
+              }
+
+              .bot_test {
+                font-size: 24rpx;
+                font-family: PingFang SC,
+                  PingFang SC-Regular;
+                font-weight: 400;
+                color: #666666;
+                line-height: 29rpx;
+                margin-left: 10rpx;
+              }
+
+            }
+
+            .lookmores {
+              width: 140rpx;
+              display: flex;
+              align-items: center;
+              justify-content: flex-end;
+
+              .lood {
+                font-size: 24rpx;
+                font-family: PingFang SC,
+                  PingFang SC-Regular;
+                font-weight: 400;
+                color: #a5a5a5;
+                line-height: 29rpx;
+                margin-right: 10rpx;
+              }
+
+              image {
+                width: 14rpx;
+                height: 20rpx;
+              }
+            }
+
+          }
+
+        }
+      }
+
+      .cno {
+        width: 100%;
+
+        .kongbox {
+          width: 460rpx;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 160rpx auto;
+
+
+          image {
+            width: 100%;
+            height: 100%;
+          }
+
+
+          .c_name {
+            margin-top: 30rpx;
+            font-size: 32rpx;
+            color: #ccc;
+          }
+        }
+
+      }
+    }
+  }
+
+  .login {
+
+    // 弹窗
+    /*使屏幕变暗  */
+    .commodity_screen {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: #000;
+      opacity: 0.2;
+      overflow: hidden;
+      z-index: 1000;
+      color: #fff;
+    }
+
+    /*对话框 */
+    .commodity_attr_box {
+      height: 400rpx;
+      width: 100%;
+      overflow: hidden;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      z-index: 2000;
+      background: #fff;
+      padding: 20rpx;
+      box-sizing: border-box;
+      border-radius: 24rpx 24rpx 0 0;
+
+      .phoneshou {
+        width: 100%;
+        padding: 0 32rpx;
+        box-sizing: border-box;
+
+        .padlock {
+          width: 100%;
+          height: 48rpx;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+
+          image {
+            width: 48rpx;
+            height: 48rpx;
+          }
+        }
+
+        .phone_title {
+          width: 100%;
+          height: 70rpx;
+          font-size: 44rpx;
+          line-height: 70rpx;
+          color: #06121F;
+          font-family: PingFangSC, PingFangSC-Regular;
+
+
+        }
+
+        .tips_content {
+          width: 100%;
+          height: 40rpx;
+          font-size: 32rpx;
+          color: #8C9198;
+          margin: 30rpx 0;
+        }
+
+
+        .downbtn {
+          width: 750rpx;
+          position: fixed;
+          bottom: 0;
+          right: 0;
+          padding: 20rpx 0;
+          background-color: #fff;
+
+          .btn {
+            height: 100rpx;
+            width: 90%;
+            color: #fff;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 32rpx;
+            background: #FF961C;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50rpx;
+
+            image {
+              width: 60rpx;
+              height: 48rpx;
+              margin-right: 20rpx;
+            }
+
+          }
+
+          .btn1 {
+            margin-bottom: 20rpx;
+            background-color: #ccc;
+          }
+        }
+      }
+    }
+  }
+
+
+  /* 弹窗 */
+  .zan_dialog__mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 998;
+    background: rgba(0, 0, 0, 0.4);
+    overflow: hidden;
+  }
+
+  .zan_dialog__container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 80%;
+    transform: translateY(300%);
+    transition: all 0.4s ease;
+    z-index: 999;
+    height: 600rpx;
+
+    .d_popup {
+      margin-top: 100rpx;
+      padding: 24rpx 32rpx;
+      box-sizing: border-box;
+      background: #fff;
+      border-radius: 8rpx;
+
+      .pup {
+        width: 100%;
+        font-size: 32rpx;
+        color: #323233;
+        text-align: center;
+        padding: 20rpx 0;
+        box-sizing: border-box;
+        font-weight: 600;
+
+      }
+
+      .gong {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 28rpx;
+        font-family: PingFangSC,
+          PingFangSC-Regular;
+        font-weight: 400;
+        text-align: center;
+        color: #7d7e80;
+        line-height: 40rpx;
+
+      }
+
+      .sure {
+        width: 100%;
+        border-top: 1rpx solid #f2f2f2;
+        padding-top: 24rpx;
+        box-sizing: border-box;
+        text-align: center;
+        color: #3388FF;
+        font-size: 32rpx;
+        margin-top: 32rpx;
+      }
+    }
+
+
+  }
+
+  .zan_dialog_show .zan_dialog__container {
+    transform: translateY(0);
+  }
+
+  .zan_dialog_show .zan_dialog__mask {
+    display: block;
+  }
+
+}
